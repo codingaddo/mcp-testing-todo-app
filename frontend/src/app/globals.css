@@ -85,9 +85,9 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #b91c1c;
   outline-offset: 1px;
-  border-color: #2563eb;
+  border-color: #b91c1c;
 }
 
 textarea {
@@ -108,8 +108,17 @@ button {
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  background-color: #2563eb;
+  background-color: #dc2626;
   color: white;
+}
+
+button:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+button:focus-visible {
+  outline: 3px solid #fee2e2;
+  outline-offset: 2px;
 }
 
 button.secondary {
@@ -117,8 +126,16 @@ button.secondary {
   color: #111827;
 }
 
+button.secondary:hover:not(:disabled) {
+  background-color: #d1d5db;
+}
+
 button.danger {
-  background-color: #dc2626;
+  background-color: #7f1d1d;
+}
+
+button.danger:hover:not(:disabled) {
+  background-color: #991b1b;
 }
 
 button:disabled {
